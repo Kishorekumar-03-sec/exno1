@@ -144,5 +144,16 @@ df1
 ```
 <img width="786" height="549" alt="image" src="https://github.com/user-attachments/assets/c22fb912-c213-411f-b517-5e7060fd097f" />
 
+# summary:
+The dataset was first read and inspected to understand its structure, contents, and any issues such as missing values or inconsistencies.
+Missing values were identified using summary functions. Different approaches were applied to handle them:
+Removing rows or columns with null values.
+Replacing missing entries with a symbol, default values, or specific labels.
+Using forward-fill and backward-fill techniques to propagate existing values.
+Outliers were detected and removed using two methods:
+Interquartile Range (IQR): Values lying outside the normal range were filtered out.
+Z-Score Method: Records with extreme deviations (beyond 3 standard deviations) were removed.
+After cleaning, the dataset was saved into a new file for further analysis.
+
 # Result:
 The given data has been successfully read, cleaned by handling duplicates and missing values, and saved to a new file named cleaned_data.csv.
